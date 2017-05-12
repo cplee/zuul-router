@@ -1,8 +1,8 @@
 spring:
   application:
-    name: ZuulRouter
+    name: zuul-router
 zuul:
   routes:
-    MilkshakeService:
+    milkshake-service:
       path: /milkshakes/**
       stripPrefix: false

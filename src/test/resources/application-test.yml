@@ -1,6 +1,6 @@
 spring:
   application:
-    name: ZuulRouter
+    name: zuul-router
   cloud:
     bus:
       enabled: false
