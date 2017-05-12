@@ -6,3 +6,6 @@ zuul:
     milkshake-service:
       path: /milkshakes/**
       stripPrefix: false
+    banana-service:
+      path: /bananas/**
+      stripPrefix: false
