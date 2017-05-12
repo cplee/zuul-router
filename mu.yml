@@ -1,5 +1,7 @@
 environments:
 - name: dev
+  cluster:
+    keyName: casey-lee-mbp
   discovery:
     provider: consul
 - name: production
