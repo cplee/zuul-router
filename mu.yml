@@ -21,5 +21,3 @@ service:
       repo: cplee/zuul-router
     build:
       image: aws/codebuild/java:openjdk-8
-    acceptance:
-      image: aws/codebuild/eb-nodejs-4.4.6-amazonlinux-64:2.1.3
