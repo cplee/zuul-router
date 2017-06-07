@@ -1,7 +1,7 @@
 environments:
 - name: dev
   cluster:
-    keyName: casey-lee-mbp
+    keyName: mu-key
     maxSize: 5
   discovery:
     provider: consul
@@ -17,7 +17,7 @@ service:
     SPRING_CLOUD_CONSUL_DISCOVERY_REGISTER: 'false'
   pipeline:
     source:
-      provider: GitHub
-      repo: cplee/zuul-router
+      provider: CodeCommit
+      repo: zuul-router
     build:
       image: aws/codebuild/java:openjdk-8
