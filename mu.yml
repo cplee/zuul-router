@@ -1,11 +1,22 @@
 environments:
-- name: dev
+- name: acceptance
   cluster:
     keyName: mu-key
+    instanceType: m4.large
     maxSize: 5
   discovery:
     provider: consul
+  loadbalancer:
+    hostedzone: mu.elasticoperations.com
 - name: production
+  cluster:
+    keyName: mu-key
+    instanceType: m4.large
+    maxSize: 5
+  discovery:
+    provider: consul
+  loadbalancer:
+    hostedzone: mu.elasticoperations.com
 
 service:
   name: zuul-router
