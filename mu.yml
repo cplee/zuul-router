@@ -3,6 +3,7 @@ environments:
   cluster:
     keyName: mu-key
     instanceType: m4.large
+    desiredCapcity: 3
     maxSize: 5
   discovery:
     provider: consul
@@ -12,6 +13,7 @@ environments:
   cluster:
     keyName: mu-key
     instanceType: m4.large
+    desiredCapcity: 3
     maxSize: 5
   discovery:
     provider: consul
@@ -21,7 +23,7 @@ environments:
 service:
   name: zuul-router
   port: 8080
-  cpu: 200
+  cpu: 512
   pathPatterns:
   - /*
   pipeline:
