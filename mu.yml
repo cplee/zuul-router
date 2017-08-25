@@ -3,7 +3,6 @@ environments:
   cluster:
     keyName: mu-key
     instanceType: m4.large
-    desiredCapcity: 3
     maxSize: 5
   discovery:
     provider: consul
@@ -13,7 +12,6 @@ environments:
   cluster:
     keyName: mu-key
     instanceType: m4.large
-    desiredCapcity: 3
     maxSize: 5
   discovery:
     provider: consul
@@ -24,9 +22,9 @@ service:
   name: zuul-router
   port: 8080
   cpu: 256
-  memory: 1024
-  pathPatterns:
-  - /*
+  memory: 512
+  hostPatterns:
+  - api.*
   pipeline:
     source:
       provider: CodeCommit
