@@ -1,6 +1,14 @@
 spring:
-  application:
-    name: zuul-router
+  application.name: zuul-router
+  jackson.serialization.write_dates_as_timestamps: false
+  cloud.consul.discovery:
+    failFast: false
+    register: false
+  cloud.discovery.client.composite-indicator.enabled: false
+
+management.health:
+  consul.enabled: false
+
 zuul:
   routes:
     milkshake-service:
@@ -9,3 +17,7 @@ zuul:
     banana-service:
       path: /bananas/**
       stripPrefix: false
+---
+spring:
+  profiles: mu
+  cloud.consul.host: 172.17.0.1
