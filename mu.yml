@@ -21,6 +21,7 @@ environments:
 service:
   name: zuul-router
   port: 8080
+  cpu: 200
   pathPatterns:
   - /*
   pipeline:
