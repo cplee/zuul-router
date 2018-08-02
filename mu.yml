@@ -4,8 +4,6 @@ environments:
     keyName: mu-key
     instanceType: m4.large
     maxSize: 5
-  discovery:
-    provider: consul
   loadbalancer:
     hostedzone: mu.elasticoperations.com
 - name: production
@@ -13,8 +11,6 @@ environments:
     keyName: mu-key
     instanceType: m4.large
     maxSize: 5
-  discovery:
-    provider: consul
   loadbalancer:
     hostedzone: mu.elasticoperations.com
 
