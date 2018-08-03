@@ -1,16 +1,10 @@
 environments:
 - name: acceptance
-  cluster:
-    keyName: mu-key
-    instanceType: m4.large
-    maxSize: 5
+  provider: ecs-fargate
   loadbalancer:
     hostedzone: mu.elasticoperations.com
 - name: production
-  cluster:
-    keyName: mu-key
-    instanceType: m4.large
-    maxSize: 5
+  provider: ecs-fargate
   loadbalancer:
     hostedzone: mu.elasticoperations.com
 
