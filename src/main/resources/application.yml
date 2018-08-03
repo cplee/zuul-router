@@ -16,8 +16,8 @@ spring:
 
 milkshake-service:
   ribbon:
-    listOfServers: milkshake-service.${_SERVICE_DISCOVERY_NAME}
+    listOfServers: milkshake-service.${_SERVICE_DISCOVERY_NAME}:8080
 
 banana-service:
   ribbon:
-    listOfServers: banana-service.${_SERVICE_DISCOVERY_NAME}
+    listOfServers: banana-service.${_SERVICE_DISCOVERY_NAME}:8080
